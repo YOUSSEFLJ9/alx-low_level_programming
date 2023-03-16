@@ -1,2 +1,2 @@
 #!/bin/bash
-cat $CFILE > C.c | gcc -E C.c -o C 
+gcc -E $CFILE -o c 
