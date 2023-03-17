@@ -6,9 +6,9 @@
   */
 int main(void)
 {
-	char i = 65;
+	char i = 97;
 
-	 while (i <= 90 )
+	 while (i <= 122 )
 	{
 		putchar(i);
 		i++;
