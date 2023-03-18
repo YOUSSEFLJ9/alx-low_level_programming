@@ -12,12 +12,12 @@
 
 		while (a <= '9')
 		{
-			putchar(i);
+			putchar(a);
 			a++;
 		}
 		while (b < 'g')
 		{
-			putchar(k);
+			putchar(b);
 			b++;
 		}
 			putchar('\n');
