@@ -3,15 +3,14 @@
  *main - Entry point
  *
  *Return: Always 0 (Success)
- *
  */
 int main(void)
 {
-	int a = 0;
+	int b = 0;
 
-	for (; a <= 9 ; a++)
+	for (; b <= 9 ; b++)
 	{
-		int putchar(int a);
+		putchar(b);
 	}
 
 	putchar('\n');
