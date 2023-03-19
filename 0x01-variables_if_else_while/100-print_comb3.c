@@ -1,26 +1,28 @@
 #include <stdio.h>
 /**
- * main - entery point
- *
- * Return: always 0
-*/
+  *main - this main this
+  *
+  *Return: Always 0 (Success)
+  *
+  */
 int main(void)
 {
-	int digit1, digit2;
+	int A, B;
 
-	for (digit1 = 0; digit1 < 9; digit1++)
+	for (A = 0; A < 10; A++)
 	{
-		for (digit2 = digit1 + 1; digit2 < 10; digit2++)
+		for (B = A + 1 ; B < 10 ; B++)
 		{
-		putchar((digit1 % 10) + '0');
-		putchar((digit2 % 10) + '0');
-		if (digit1 == 8 && digit2 == 9)
-			continue;
-		putchar(',');
-		putchar(' ');
+			putchar((A % 10) + '0');
+			putchar((B % 10) + '0');
+			if (A != 8 || B != 9)
+			{
+			putchar(',');
+			putchar(' ');
+			}
 		}
 	}
-	putchar('\n');
 
+	putchar('\n');
 	return (0);
 }
