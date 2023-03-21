@@ -4,10 +4,18 @@
  */
 void print_alphabet_x10(void)
 {
-	int i;
+	int times = 0;
+	char alph;
 
-	for (i = 1; i <= 10; i++)
+	while(times<10 )
 	{
-		print_alphabet();
+		alph ='a';
+		while(alph <= 'z')
+		{
+			_putchar(alph);
+			alph++;
+		}
+		_putchar('\n');
+		times++;
 	}
 }
