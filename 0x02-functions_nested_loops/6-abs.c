@@ -3,7 +3,7 @@
   *_abs - this function return the abslut Number of input
   *
   *Return: the abslut number
-  *@n this number input
+  *@n: this number input
   */
 int _abs(int n)
 {
