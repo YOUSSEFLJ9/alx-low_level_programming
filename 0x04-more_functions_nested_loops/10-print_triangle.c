@@ -1,22 +1,25 @@
 #include "main.h"
+
 /**
-  *print_triangle - this function print triagle
-  *
-  *@size: this var reprisent lins and colone 
-  */
+ * print_triangle - print traingle with #'s with given size
+ * @size: size of triangle to draw
+ */
+
 void print_triangle(int size)
 {
-	int a,b,c;
+	int height;
+	int width;
+	int draw;
 
 	if (size <= 0)
 		_putchar('\n');
 
-	for (a = 1; a <= size; a++ )
+	for (height = 1; height <= size; height++)
 	{
-		for (b = 1; b <= (size - a); b++)
+		for (width = 1; width <= (size - height); width++)
 			_putchar(' ');
 
-		for (c = 1; c <= a ; c++)
+		for (draw = 1; draw <= height; draw++)
 			_putchar('#');
 
 		_putchar('\n');
