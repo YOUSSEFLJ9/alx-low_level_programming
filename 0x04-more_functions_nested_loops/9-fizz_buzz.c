@@ -1,8 +1,9 @@
 #include <stdio.h>
+#include "main.h"
 /**
  *main - going to print from the fuction inside it
   *
-  *Return: always 0
+  *Return: always 0 (ture)
   *
   */
 int main(void)
