@@ -28,6 +28,7 @@ int main(void)
 		{
 			printf("%d", n);
 		}
+		if(i < 100 )
 		printf(" ");
 	}
 
