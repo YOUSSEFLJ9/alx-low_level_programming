@@ -1,12 +1,14 @@
 #include "main.h"
+
 /**
- *print_number - this fuction print any Number
- *
- *@n: this it the number to be printed
+ * print_number - print an integer, without using long, arrays, or pointers
+ * @n: number to be printed
  */
+
 void print_number(int n)
 {
-	int deccont = 1, positive = n, temp, digit;
+	unsigned int tens, digit, positive = n;
+	double t_beg = 1;
 
 	if (n == 0)
 		_putchar('0');
@@ -17,17 +19,17 @@ void print_number(int n)
 			positive = n * -1;
 			_putchar('-');
 		}
-		while (deccont <= positive)
+
+		while (t_beg <= positive)
+			t_beg *= 10;
+		tens = t_beg / 10;
+
+		while (tens >= 1)
 		{
-			deccont *= 10;
-			temp = deccont / 10;
-		}
-		while (temp >= 1)
-		{
-			digit = positive / temp;
+			digit = positive / tens;
 			_putchar(digit + '0');
-			positive = positive - (temp * digit);
-			temp /= 10;
+			positive = (positive - (tens * digit));
+			tens /= 10;
 		}
 	}
 }
