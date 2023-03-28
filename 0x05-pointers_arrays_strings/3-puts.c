@@ -1,23 +1,19 @@
 #include "main.h"
 
 /**
-  *_puts - this fuction pring an array of char
-  *
-  *@str: this is the string of char gonna printed
-  */
+ *_puts - this fuction pring an array of char
+ *@str: this is the string of char gonna printed
+ *
+ */
 
 void _puts(char *str)
 {
-	int c = 0;
+	int i = 0;
 
-	for (;;c++)
+	while (str[i] != '\0')
 	{
-		if (str[c] != '\0')
-		{
-			_putchar(str[c]);
-		}
-		else
-			break;
+		_putchar(str[i]);
+		i++;
 	}
 	_putchar('\n');
 }
