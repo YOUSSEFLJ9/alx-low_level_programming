@@ -1,17 +1,17 @@
 #include "main.h"
 
 /**
- *swap_int - swap two int
- *
- *@a: first int
- *
- *@b: second int
- */
+  *swap_int - this function going to swap two int
+  *
+  *@a: this the ferst one
+  *@b: this is the socund one
+  *
+  */
 void swap_int(int *a, int *b)
 {
-	int tmp = 0;
+	int swap = 0;
 
-	tmp = *a;
+	swap = *a;
 	*a = *b;
-	*b = tmp;
+	*b = swap;
 }
