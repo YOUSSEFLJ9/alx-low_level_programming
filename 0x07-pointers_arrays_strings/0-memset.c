@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  *_memset - this fuction full n byte of pointer by s
  *@n: the Number of byte
@@ -12,10 +13,9 @@ char *_memset(char *s, char b, unsigned int n)
 {
 	unsigned int i = 0;
 
-	for (; 0 < n; i++)
+	for (; i < n; i++)
 	{
 		s[i] = b;
-		n--;
 	}
 
 	return (s);
