@@ -4,11 +4,11 @@
  *
  *@s: this variable
  *@accept : this variable
- *Return: the lenght of char montion in s and using in accept
+ *Return: the lenght of char montion
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	int counter = 0;
+	unsigned int counter = 0;
 	char *acpt;
 
 	while (*s)
@@ -16,7 +16,7 @@ unsigned int _strspn(char *s, char *accept)
 		acpt = accept;
 		while (*acpt)
 		{
-			if (*s == *accept)
+			if (*s == *acpt)
 			{
 				counter++;
 				break;
