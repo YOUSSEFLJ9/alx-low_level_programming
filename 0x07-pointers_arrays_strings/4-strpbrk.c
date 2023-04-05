@@ -6,23 +6,19 @@
   *@accept: the stiring to looking for in s.
   *Return: the function return the first char mentioned and complite
   */
-
 char *_strpbrk(char *s, char *accept)
 {
-
-	int i, j;
+	int i;
 
 	while(*s)
 	{
 		for (i = 0; accept[i]; i++)
 		{
 			if (*s == accept[i])
-			{
 				return (s);
-			}
-		s++
 		}
+		s++;
+		
 	}
 	return ('\0');
-
 }
