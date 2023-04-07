@@ -1,7 +1,7 @@
 #include "main.h"
 
 int reversestring(char *s, int bg, int end);
-int _lenght(char *s);
+int _lenght(char *s, int ln);
 
 /**
   * reversestring - this function reverses the string given
@@ -28,12 +28,13 @@ int reversestring(char *s, int bg, int end)
  * @s: string
  * Return: length int
  */
-int _lenght(char *s)
+int _lenght(char *s, int ln)
 {
-	if (s[0] == '\0')
-		return (0);
+
+	if (s[ln] == '\0')
+		return (ln);
 	else
-		return (1 + _lenght(s + 1));
+		return ( _lenght(s , ln + 1));
 }
 
 /**
@@ -45,6 +46,5 @@ int _lenght(char *s)
   */
 int is_palindrome(char *s)
 {
-	return (reversestring(s, 0, _lenght(s) - 1));
+	return (reversestring(s, 0, _lenght(s, 0) - 1));
 }
-
