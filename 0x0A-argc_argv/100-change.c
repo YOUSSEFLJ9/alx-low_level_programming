@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
 }
 /**
   *change - this fuction give the minimum number of coin to make change
-  *@argv: vector of char
+  *@input_coin: value entered
   *
   *Return: no return it's void
   */
@@ -72,5 +72,5 @@ void change(int input_coin)
 				coinsnumber++;
 			}
 		}
-		printf("%d\n", coinsnumber);	
+		printf("%d\n", coinsnumber);
 }
