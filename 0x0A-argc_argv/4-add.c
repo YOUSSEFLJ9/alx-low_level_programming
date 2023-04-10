@@ -7,7 +7,7 @@
   *@argv: arg vecter
   *@argc: arg counter
   *
-  *Return - 1 if have a symbols  0 if all right
+  *Return: 1 if have a symbols  0 if all right
   */
 int main(int argc, char **argv)
 {
@@ -17,7 +17,8 @@ int main(int argc, char **argv)
 	for (; i < argc; i++)
 	{
 		int j = 0;
-		while ( argv[i][j] != '\0')
+
+		while (argv[i][j] != '\0')
 		{
 			if (!(isdigit(argv[i][j])))
 			{
