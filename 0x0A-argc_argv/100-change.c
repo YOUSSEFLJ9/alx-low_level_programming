@@ -39,34 +39,30 @@ void change(int input_coin)
 		{
 			printf("%d\n", coinsnumber);
 		}
-		while (input_coin != 0)
+		else
 		{
-			if (input_coin >= 100)
-			{
-				input_coin -= 100;
-				coinsnumber++;
-			}
-			else if (input_coin >= 25)
+
+			while (input_coin >= 25)
 			{
 				input_coin -= 25;
 				coinsnumber++;
 			}
-			else if (input_coin >= 10)
+			while (input_coin >= 10)
 			{
 				input_coin -= 10;
 				coinsnumber++;
 			}
-			else if (input_coin >= 5)
+			while (input_coin >= 5)
 			{
 				input_coin -= 5;
 				coinsnumber++;
 			}
-			else if (input_coin >= 2)
+			while (input_coin >= 2)
 			{
 				input_coin -= 2;
 				coinsnumber++;
 			}
-			else
+			while (input_coin >= 1)
 			{
 				input_coin -= 1;
 				coinsnumber++;
