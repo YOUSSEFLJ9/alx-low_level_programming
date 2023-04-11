@@ -67,6 +67,6 @@ void change(int input_coin)
 				input_coin -= 1;
 				coinsnumber++;
 			}
+			printf("%d\n", coinsnumber);
 		}
-		printf("%d\n", coinsnumber);
 }
