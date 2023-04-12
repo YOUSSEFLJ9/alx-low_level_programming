@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <string.h>
 #include <stdlib.h>
 /**
   *_strdup - this function have a newly allocated space have a copy of str
