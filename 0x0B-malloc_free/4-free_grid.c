@@ -18,5 +18,5 @@
 	{
 		free(grid[i]);
 	}
-	free(gtid);
+	free(grid);
 }
