@@ -29,7 +29,6 @@ int wordcount(char *str)
 	return (count);
 }
 
-
 /**
  *strtow - thid function split a string into words
  *
@@ -44,9 +43,10 @@ char **strtow(char *str)
 	int i = 0, j = 0, c = 0, len = 0;
 	int Numofwords = wordcount(str);
 
+	if (Numofwords == 0)
+		return (NULL);
 	if (str == NULL || *str == '\0')
 		return (NULL);
-
 	string = (char **)malloc((Numofwords + 1) * sizeof(char *));
 	if (string == NULL)
 	{
