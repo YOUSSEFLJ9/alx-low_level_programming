@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "dog.h"
 /**
   *init_dog - this fuction full struct dog with theer parms
@@ -12,7 +13,8 @@
   */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	d->name = name;
+	d = malloc(sizeof(struct dog));
+	(*d).name = name;
 	d->age = age;
 	d->owner = owner;
 
