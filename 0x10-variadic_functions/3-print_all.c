@@ -15,10 +15,7 @@ void print_all(const char * const format, ...)
 	double d;
 
 	va_start(data, format);
-	if (format == 0)
-	{
-		exit(0);
-	}
+
 	while (format[i] != '\0')
 	{
 		switch (format[i])
