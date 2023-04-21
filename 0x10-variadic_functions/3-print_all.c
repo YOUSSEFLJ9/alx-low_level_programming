@@ -36,7 +36,7 @@ void print_all(const char * const format, ...)
 				break;
 			case 's':
 				string = va_arg(data, char*);
-					if (!string)
+					if (*string == '\0')
 						string = "(nil)";
 				printf("%s%s", string, sep);
 				break;
