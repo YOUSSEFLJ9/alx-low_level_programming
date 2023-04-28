@@ -6,6 +6,7 @@
 void free_list(list_t *head)
 {
 	list_t *remove = head;
+
 	while (remove != NULL)
 	{
 		head = remove->next;
@@ -14,5 +15,6 @@ void free_list(list_t *head)
 
 		remove = head;
 	}
+	free(head);
 
 }
