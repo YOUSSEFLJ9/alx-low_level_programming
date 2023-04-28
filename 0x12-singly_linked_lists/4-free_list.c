@@ -9,7 +9,9 @@ void free_list(list_t *head)
 	while (remove != NULL)
 	{
 		head = remove->next;
+		free(remove->str);
 		free(remove);
+
 		remove = head;
 	}
 
