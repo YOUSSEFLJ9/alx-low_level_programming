@@ -10,7 +10,6 @@ list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *ednode;
 	list_t *end;
-	char *strdp;
 
 	if (str == NULL)
 		return (NULL);
@@ -18,11 +17,9 @@ list_t *add_node_end(list_t **head, const char *str)
 	if (ednode == NULL)
 		return (NULL);
 
-	strdp = strdup(str);
-	ednode->str = strdp;
+	ednode->str = strdup(str);;
 	if (ednode->str == NULL)
 	{
-		free(strdp);
 		free(ednode);
 		return (NULL);
 	}
@@ -44,6 +41,6 @@ list_t *add_node_end(list_t **head, const char *str)
 	ednode->next = NULL;
 
 	}
-	free(strdp);
+
 	return (ednode);
 }
