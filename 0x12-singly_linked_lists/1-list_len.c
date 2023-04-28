@@ -11,6 +11,7 @@ size_t list_len(const list_t *h)
 
 	if (h == NULL)
 	{
+		free(node);
 		return (0);
 	}
 	else
@@ -22,6 +23,7 @@ size_t list_len(const list_t *h)
 			count++;
 			node = node->next;
 		}
+		free(node);
 		return (count);
 
 	}
