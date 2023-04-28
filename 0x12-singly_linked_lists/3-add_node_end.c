@@ -17,7 +17,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	if (ednode == NULL)
 		return (NULL);
 
-	ednode->str = strdup(str);;
+	ednode->str = strdup(str);
 	if (ednode->str == NULL)
 	{
 		free(ednode);
