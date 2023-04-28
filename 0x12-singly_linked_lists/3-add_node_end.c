@@ -10,15 +10,17 @@ list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *ednode = malloc(sizeof(list_t));
 	list_t *end;
-
-	if (str == NULL)
+	
+	if (str == NULL || ednode == NULL)
 		return (NULL);
 
 	ednode->str = strdup(str);
 	ednode->len = strlen(ednode->str);
-	if (ednode == NULL || ednode->str == NULL)
+	if ( ednode->str == NULL)
+	{
+		free(ednode);
 		return (NULL);
-
+	}
 	if (*head == NULL)
 	{
 		*head = ednode;
