@@ -22,14 +22,14 @@ size_t print_list(const list_t *h)
 		{
 			if (node->str == NULL)
 			{
-				node->str = "(nil)";
-				node->len = 0;
+				printf("[0] (nil)\n");
 			}
-			printf("[%u] %s\n", node->len, node->str);
+			else
+				printf("[%u] %s\n", node->len, node->str);
 			count++;
 			node = node->next;
+			
 		}
-		free(node);
 		return (count);
 	}
 }
