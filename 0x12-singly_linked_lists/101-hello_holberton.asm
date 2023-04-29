@@ -3,7 +3,7 @@
 ;Date: 2023-apr-29
 
 section .data
-    p db "Hello, Holberton",0Ah ;this is a variable call it print
+    p db "Hello, Holberton",10
 
 section .text
     global main
