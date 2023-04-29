@@ -23,7 +23,6 @@ size_t list_len(const list_t *h)
 			count++;
 			node = node->next;
 		}
-		free(node);
 		return (count);
 
 	}
