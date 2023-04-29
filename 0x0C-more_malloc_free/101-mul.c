@@ -30,9 +30,7 @@ int is_valid_number(char *str)
  */
 int main(int argc, char **argv)
 {
-	int result = malloc(1024);
-	int num1 = malloc(1024);
-	int num2 = malooc(1024);
+	int result, num1, num2;
 
 	if (argc != 3)
 	{
