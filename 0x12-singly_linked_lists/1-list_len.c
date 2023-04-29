@@ -11,7 +11,6 @@ size_t list_len(const list_t *h)
 
 	if (h == NULL)
 	{
-		free(node);
 		return (0);
 	}
 	else
