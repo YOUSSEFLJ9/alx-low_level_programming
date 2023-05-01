@@ -1,4 +1,9 @@
 #include "lists.h"
+/**
+ *pop_listint - this function going to remove the head of list
+ *@head: the head of list
+ *Return: the n value of head removed
+ */
 int pop_listint(listint_t **head)
 {
 	listint_t *node;
