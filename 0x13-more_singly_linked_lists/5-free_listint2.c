@@ -8,7 +8,7 @@ void free_listint2(listint_t **head)
 	listint_t *nude;
 
 	nude = *head;
-	if (*head == NULL)
+	if (nude == NULL)
 		return;
 
 	while (*head)
