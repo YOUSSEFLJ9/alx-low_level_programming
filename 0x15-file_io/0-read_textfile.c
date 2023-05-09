@@ -1,9 +1,5 @@
 #include "main.h"
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
-#include <fcntl.h>
 /**
  *read_textfile - this function read text file and print it
  *@filename: is the actual file name
