@@ -18,7 +18,7 @@ int create_file(const char *filename, char *text_content)
 		while (text_content[count])
 			count++;
 	}
-	fptr = open(filename, O_RDWRn | O_CREAT | O_TRUNC, 0600);
+	fptr = open(filename, O_RDWR | O_CREAT | O_TRUNC, 0600);
 	wrt = write(fptr, text_content, count);
 	if (wrt == -1 || fptr == -1)
 	{
