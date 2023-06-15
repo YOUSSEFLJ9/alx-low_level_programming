@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * add_dnodeint - add new node at the beginning of a list
+ * add_dnodeint_end - add new node at the end of a list
  *@head: node at some position
  *@n: is the number to be added
  *Return: the adress of the new node or NULL
@@ -29,7 +29,6 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 		{
 			node = node->next;
 		}
-		
 		node->next = new_node;
 		new_node->prev = node;
 	}
