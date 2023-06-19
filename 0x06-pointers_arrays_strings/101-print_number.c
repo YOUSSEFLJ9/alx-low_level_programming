@@ -1,5 +1,10 @@
 #include "main.h"
-
+/**
+ *print_number - print number using recursve function
+ *@n: taking this number
+ *its vois no return
+ *
+ */
 void print_number(int n)
 {
 
@@ -7,7 +12,7 @@ void print_number(int n)
 	{
 		_putchar('-');
 		n = n * (-1);
-	}	
+	}
 	if (n / 10 != 0)
 	{
 		print_number(n / 10);
