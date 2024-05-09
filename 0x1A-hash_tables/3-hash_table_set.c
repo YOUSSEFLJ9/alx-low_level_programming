@@ -19,9 +19,9 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	{
 		ht->array[j]->key = strdup(key);
 		ht->array[j]->value = strdup(value);
-		if(!ht->array[j]->key)
+		if (!ht->array[j]->key)
 			return (0);
-		if(!ht->array[j]->value)
+		if (!ht->array[j]->value)
 		{
 			free(ht->array[j]->key);
 			return (0);
