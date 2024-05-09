@@ -1,6 +1,6 @@
 #include "hash_tables.h"
 /**
-  * hash_table_print - function that remove the hash tabe.
+  * hash_table_delete - function that remove the hash tabe.
   * @ht: the hash table
   * Return: do not do anything if the ht is NULL
   */
