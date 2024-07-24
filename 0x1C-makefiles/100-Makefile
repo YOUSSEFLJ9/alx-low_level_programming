@@ -4,7 +4,9 @@ CC=gcc
 OBJ=$(SRC:%.c=%.o) 
 CFLAGS= -Wall -Werror -Wextra -pedantic
 
-all: m.h $(OBJ)
+all:$(NAME)
+
+$(NAME):m.h
 	$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
 
 clean :
