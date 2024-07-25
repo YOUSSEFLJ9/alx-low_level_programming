@@ -1,8 +1,5 @@
 #!/usr/bin/python3
-"""
-5-island_perimeter
-is a fuction to technival interview prepartion : that return the peri,ter of the island described in grid variable
-"""
+"""5-island_perimeter"""
 def island_perimeter(grid):
     """
     return the p, of the island.
