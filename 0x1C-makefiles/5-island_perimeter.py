@@ -8,12 +8,12 @@ def island_perimeter(grid):
     return the p, of the island
 
     """
-    width = len(grid)
-    height = len(grid[0])
+    height = len(grid)
+    width = len(grid[0])
     size = 0
     edge = 0
-    for row in range(height-1):
-        for col in range(width-1):
+    for row in range(height - 1):
+        for col in range(width - 1):
             if grid[row][col] == 1:
                 size += 1
                 if (col > 0 and grid[row][col - 1] == 1):
